@@ -1,0 +1,53 @@
+.homePage {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    row-gap: 25px;
+    padding-block: 25px;
+    padding-inline: 2.5%;
+}
+
+.post {
+    width: min(100%, 600px);
+    background-color: white;
+    box-shadow: var(--shadow);
+    padding: min(5%, 30px);
+    border-radius: 10px;
+}
+
+.postHeading h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.postTextContainer {
+    margin-block: 20px;
+}
+
+.nameAndDeleteBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    p {
+        font-size: 0.85rem;
+        color: gray;
+    }
+
+    button {
+        background-color: coral;
+        color: white;
+        font-weight: 600;
+        white-space: nowrap;
+        padding-block: 0.5em;
+        padding-inline: 1em;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &:hover {
+            background-color: crimson;
+        }
+    }
+}

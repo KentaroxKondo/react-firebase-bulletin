@@ -1,0 +1,80 @@
+.createPostPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    width: 90%;
+    padding-block: 25px;
+    margin-inline: auto;
+}
+
+.postContainer {
+    background-color: white;
+    border-radius: 10px;
+    width: min(100%, 500px);
+    padding-block: 30px;
+    padding-inline: 5%;
+    box-shadow: var(--shadow);
+}
+
+.postContainer h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.postContainer h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.fields {
+    margin-bottom: 25px;
+}
+
+.fields li:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+input,
+textarea {
+    width: 100%;
+    outline: none;
+    border: solid 2px hsla(0, 0%, 0%, 0.1);
+    border-radius: 5px;
+    padding-block: 0.5em;
+    padding-inline: 0.5em;
+    transition: border 0.2s;
+
+    &:focus {
+        border: solid 2px hsla(219, 79%, 66%, 0.75);
+    }
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.postBtn {
+    display: block;
+    width: 100%;
+    margin-inline: auto;
+    padding-block: 0.5em;
+    background-color: cornflowerblue;
+    box-shadow: var(--shadow);
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: slateblue;
+        transform: translateY(2.5px);
+        box-shadow: none;
+    }
+}
