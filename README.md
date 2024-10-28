@@ -1,3 +1,3 @@
 # ReactとFirebaseを使った、Google認証機能付き掲示板アプリ
 
-Firebaseを初めて学習し、Googleログイン機能付きの掲示板アプリを練習で作ってみました。
+Firebaseを初めて学習し、Googleログイン/ログアウト機能付きの掲示板アプリをReactで作ってみました。
